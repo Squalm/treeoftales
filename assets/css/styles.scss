@@ -1,0 +1,190 @@
+---
+---
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jacquard+24&family=Macondo&display=swap');
+
+$text_stack: 'EB Garamond', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
+$pixel_stack: 'Jacquard 24', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
+$block_text_stack: 'Cinzel Decorative', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
+$alt_stack: 'Macondo', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
+
+$green: #657133;
+$purple: #5B507A;
+$background: #D1BEB0;
+$highlight: #659157;
+$text: black;
+
+$fill-padding: 0.3em;
+$canon-size: max(28px, 5ch);
+
+body {
+    font-family: $text_stack;
+    background-color: $background;
+    color: $text;
+    
+    margin: 0;
+    overflow-x: hidden;
+    line-height: 1.2;
+    
+    font-size: $canon-size;
+    // Smaller fonts on mobile
+    @media (max-width: 932px) {
+        font-size: 24px;
+    }
+
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 1000;
+}
+
+strong {
+    font-weight: 1000;
+}
+
+a {
+    text-decoration: none;
+    color: $highlight;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+img {
+    max-width: 300px;
+    border-radius: 14px;
+}
+
+// Fonts
+.normal {
+    font-family: $text_stack;
+}
+.pixel {
+    font-family: $pixel_stack;
+}
+.caps {
+    font-family: $block_text_stack;
+}
+.alt {
+    font-family: $alt_stack;
+}
+
+// size
+.huge {
+    font-size: 2em;
+}
+.small {
+    font-size: max(14px, 0.6em);
+}
+.tiny {
+    font-size: max(14px, 0.5em);
+}
+
+// remove list formatting
+ol {
+    padding: 0 0 0 0;
+}
+li {
+    list-style: none;
+}
+
+// Blocks
+.middle-block {
+    // Here to make it clear!
+    display: block;
+
+    padding-left: 1%;
+    padding-right: 1%;
+
+    @media (min-width: 1200px) {
+        padding-left: calc(50vw - 400px);
+        padding-right: calc(50vw - 400px);
+    }
+}
+.left-block {
+    display: block;
+
+    padding-left: 1%;
+    padding-right: 1%;
+
+    @media (min-width: 1200px) {
+        padding-left: max(100px, calc(50vw - 600px));
+        // pad so that width to 1000px
+        padding-right: calc(100% - (max(100px, calc(50vw - 600px)) + 800px));
+    }
+}
+.right-block {
+    display: block;
+
+    padding-left: 1%;
+    padding-right: 1%;
+
+    text-align: right;
+    
+    @media (min-width: 1200px) {
+        padding-right: max(100px, calc(50vw - 600px));
+        // pad so that width is 1000px
+        padding-left: calc(100% - (max(100px, calc(50vw - 600px)) + 800px));
+    }
+}
+.wide-block {
+    // Here to make it clear!
+    display: block;
+
+    padding-left: 1%;
+    padding-right: 1%;
+
+    @media (min-width: 1200px) {
+        padding-left: max(100px, calc(50vw - 600px));
+        padding-right: max(100px, calc(50vw - 600px));
+    }
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+    
+    // move to the left on smol screens
+    // @media (max-width: 1200px) {
+    //     text-align: left;
+    // }
+}
+.center {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+hr {
+    color: $text;
+    border-color: $text;
+}
+
+// colours
+.green {
+    color: $green;
+}
+.purple {
+    color: $purple;
+}
+.highlight {
+    color: $highlight
+}
+
+// list entries
+.list-entry {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    img {
+        margin-right: 20px;
+    }
+
+    div {
+        flex-grow: 2;
+    }
+}
