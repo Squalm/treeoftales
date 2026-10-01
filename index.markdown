@@ -16,12 +16,12 @@ Winners of the league may select one card not already chosen by anyone else to i
 ## --- --- ---
 {: .wide-block .center .pixel .connect-above }
 
-<ol class="middle-block alt" >
+<ol class="alt" >
 {% for post in site.posts %}
-    <li class="list-entry" >
+    <li class="list-entry wide-block" >
         <img src="{{post.image}}" />
         <div>
-            <p class="tiny green">{{post.shortdate}} – {{post.winner}} ({{post.points}} points)</p>
+            <p class="tiny green connect-above-on-big">{{post.shortdate}} – {{post.winner}} ({{post.points}} points)</p>
             <p class="small">This record marks the winner of the Dark Sphere Pauper League in 
             {{post.englishdate}}. For besting all {{post.possessive}} foes in friendly competition, {{post.winner}} 
             won the right to inscribe the name of one card in the Tree of Tales.
@@ -29,12 +29,13 @@ Winners of the league may select one card not already chosen by anyone else to i
             {{post.winner}} chose <span class="caps">{{post.cardname}}</span> to be inscribed. 
             <br /><br />
             Here may all visitors see its mark.</p>
+            {{post.content}}
         </div>
     </li>
     <br />
 {% endfor %}
 <!-- Forever entry -->
-    <li class="list-entry" >
+    <li class="list-entry middle-block " >
         <img src="/assets/images/mrd-285-tree-of-tales.jpeg" />
         <div>
             <p class="tiny green">The lowest ring</p>

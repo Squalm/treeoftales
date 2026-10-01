@@ -6,6 +6,7 @@ $text_stack: 'EB Garamond', -apple-system, BlinkMacSystemFont, avenir next, aven
 $pixel_stack: 'Jacquard 24', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
 $block_text_stack: 'Cinzel Decorative', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
 $alt_stack: 'Macondo', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
+$mono_stack: 'Courier New', Courier, monospace;
 
 $green: #657133;
 $purple: #5B507A;
@@ -62,6 +63,9 @@ a {
 }
 .alt {
     font-family: $alt_stack;
+}
+.mono {
+    font-family: $mono_stack;
 }
 
 // size
@@ -166,6 +170,11 @@ hr {
 }
 .connect-above {
     margin-top: 0;
+}
+.connect-above-on-big {
+    @media (min-width: 651px) {
+        margin-top: 0;
+    }
 }
 
 // colours
