@@ -50,11 +50,6 @@ a {
     }
 }
 
-img {
-    max-width: 300px;
-    border-radius: 14px;
-}
-
 // Fonts
 .normal {
     font-family: $text_stack;
@@ -74,10 +69,10 @@ img {
     font-size: 2em;
 }
 .small {
-    font-size: max(14px, 0.6em);
+    font-size: max(20px, 0.6em);
 }
 .tiny {
-    font-size: max(14px, 0.5em);
+    font-size: max(20px, 0.5em);
 }
 
 // remove list formatting
@@ -93,8 +88,8 @@ li {
     // Here to make it clear!
     display: block;
 
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
 
     @media (min-width: 1200px) {
         padding-left: calc(50vw - 400px);
@@ -104,8 +99,8 @@ li {
 .left-block {
     display: block;
 
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
 
     @media (min-width: 1200px) {
         padding-left: max(100px, calc(50vw - 600px));
@@ -116,8 +111,8 @@ li {
 .right-block {
     display: block;
 
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
 
     text-align: right;
     
@@ -131,8 +126,8 @@ li {
     // Here to make it clear!
     display: block;
 
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
 
     @media (min-width: 1200px) {
         padding-left: max(100px, calc(50vw - 600px));
@@ -163,6 +158,16 @@ hr {
     border-color: $text;
 }
 
+
+// For removing the gap between two elements
+// mark them both with these.
+.connect-below {
+    margin-bottom: 0;
+}
+.connect-above {
+    margin-top: 0;
+}
+
 // colours
 .green {
     color: $green;
@@ -179,12 +184,25 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
 
     img {
         margin-right: 20px;
+        width: 300px;
+        border-radius: 14px;
+        object-fit: cover;
+        aspect-ratio: calc(597/832);
     }
 
     div {
         flex-grow: 2;
+    }
+
+    @media (max-width: 650px) {
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
     }
 }

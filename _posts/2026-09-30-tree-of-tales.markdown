@@ -8,4 +8,5 @@ englishdate: "the ninth month of the year 2026"
 shortdate: "September 2026"
 winner: "Oscar Mitcham"
 points: "24"
+possessive: "their"
 ---
