@@ -46,3 +46,10 @@ Winners of the league may select one card not already chosen by anyone else to i
         </div>
     </li>
 </ol>
+
+## --- --- ---
+{: .wide-block .center .pixel }
+
+Website by [Oscar Mitcham](https://xhirp.com){: .black }.  
+Built by Jekyll and hosted by Netlify.
+{: .right-block .tiny .green }
