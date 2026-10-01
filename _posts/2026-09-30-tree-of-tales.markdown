@@ -12,8 +12,8 @@ possessive: "his"
 Record:
 {: .tiny .green .connect-below }
 
-1. **3-0**{: .mono } with walls spy combo
-2. **2-1**{: .mono } with walls spy combo
-3. **3-0**{: .mono } with walls spy combo
-4. **1-2**{: .mono } with walls spy combo
+1. **3-0**{: .mono } with spy combo
+2. **2-1**{: .mono } with spy combo
+3. **3-0**{: .mono } with spy combo
+4. **1-2**{: .mono } with spy combo
 {: .tiny .green .connect-above }
