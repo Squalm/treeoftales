@@ -1,11 +1,11 @@
 ---
 layout: none
-date:   2026-09-30
-cardname: "Tree of Tales"
-image: "assets/images/mrd-285-tree-of-tales.jpeg"
+date:   2026-10-01
+cardname: "Lotleth Giant"
+image: "assets/images/grn-74-lotleth-giant.jpeg"
 englishdate: "the ninth month of the year 2026"
 shortdate: "September 2026"
-winner: "Oscar Mitcham"
-points: "24"
-possessive: "their"
+winner: "Josh"
+points: "27"
+possessive: "his"
 ---
