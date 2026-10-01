@@ -39,9 +39,9 @@ Winners of the league may select one card not already chosen by anyone else to i
         <div>
             <p class="tiny green">The lowest ring</p>
             <p class="small">
-            This lowest mark on The Tree of Tales marks the beginning of its record.
+            This lowest mark on The Tree of Tales denotes the beginning of its record.
             <br /><br />
-            As it is wished, above this point may all visitors see the marks of those who won before them.
+            Above this point may all visitors see the marks of those best among our friendly club of mages.
             </p>
         </div>
     </li>
